@@ -4,6 +4,9 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+# set environment variables
+env:
+  - API_KEY=4a47e2ae-81a3-4ef5-89be-5974c39fff04
 # command to run tests
 script:
   - pytest -v

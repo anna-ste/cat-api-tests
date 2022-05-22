@@ -12,6 +12,9 @@ on:
 permissions:
   contents: read
 
+env:
+  API_KEY: 4a47e2ae-81a3-4ef5-89be-5974c39fff04
+
 jobs:
   build:
 
