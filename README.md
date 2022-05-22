@@ -13,15 +13,15 @@ It will handle all the system links, paths, pip linking automatically.
 
 * Ways of setting variables: 
     1. In `config` create file `settings_local.json` and copy content of `settings.json`. In `settings_local.json` you can set necessary values for variables used in framework such as `api-key`.
+    2. Set environment variables. Use same naming as in `settings.json`, but capital letters, for example, if in `settings.json` we have `api_key`, environment variable should be named `API_KEY`.
    
 
 * Priority of execution:
     1. `settings.json` will be overwritten by `settings_local.json`.
     2. `settings_local.json` will be overwritten by environment variables.
-    3. Environment variables will be overwritten by command line arguments.
 
 
-##API selected for testing 
+## API selected for testing 
 
 https://docs.thecatapi.com/
 
