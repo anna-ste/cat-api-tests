@@ -3,23 +3,23 @@ import random
 import pytest
 
 from src.constants.votes_data import VotesData as VD
-from src.utils import helpers
 from src.utils import request
+from src.utils import response_handler
 
 
 @pytest.fixture
 def setup_create_vote():
     response = request.get_public_image()
-    image_id = helpers.get_image_id(response)
+    image_id = response_handler.get_image_id(response)
     return image_id
 
 
 @pytest.fixture()
 def setup_delete_vote():
     response = request.get_public_image()
-    image_id = helpers.get_image_id(response)
+    image_id = response_handler.get_image_id(response)
     response = request.send_vote(image_id=image_id)
-    vote_id = helpers.get_vote_id(response)
+    vote_id = response_handler.get_vote_id(response)
     return vote_id
 
 
