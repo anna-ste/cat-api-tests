@@ -28,7 +28,7 @@ https://docs.thecatapi.com/
 
 ## Implemented tests
 Tests in `test_categories.py` cover GET method which allows us
-to get list of available categories
+to get list of available categories and validate json schema
 
 
 Tests in `test_votes.py` cover POST method creating votes and DELETE method deleting votes
