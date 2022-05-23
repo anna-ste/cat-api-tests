@@ -26,4 +26,3 @@ def test_category_list_json_schema():
 
     # check response corresponds to schema
     assert response_handler.validate_json(response, schema), 'Category list schema is not valid'
-
